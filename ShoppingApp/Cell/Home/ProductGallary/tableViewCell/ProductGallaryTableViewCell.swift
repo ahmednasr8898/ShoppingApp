@@ -41,7 +41,7 @@ class ProductGallaryTableViewCell: UITableViewCell {
     func setUpPageControl(){
         pageControl.numberOfPages = productGalleryImages.count
         pageControl.subviews.forEach {
-            $0.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
+            $0.transform = CGAffineTransform(scaleX: 1, y: 1)
         }
     }
 }

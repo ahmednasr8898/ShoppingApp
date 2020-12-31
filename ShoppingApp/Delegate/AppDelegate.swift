@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         //custom title size in tab bar
-        let font = UIFont.systemFont(ofSize: 15)
+        let font = UIFont.systemFont(ofSize: 10)
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: font], for: .normal)
         return true
     }

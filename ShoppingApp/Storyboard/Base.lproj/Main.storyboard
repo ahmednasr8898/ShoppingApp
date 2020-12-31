@@ -19,7 +19,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Categories" image="chart.bar.doc.horizontal" catalog="system" id="NQp-QV-JTJ">
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="8"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Luh-eS-M33" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -38,7 +38,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Deals" image="rectangle.and.pencil.and.ellipsis" catalog="system" id="A7b-fK-YK0">
                         <color key="badgeColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="8"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k7f-Gd-d0s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -56,7 +56,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="My Account" image="person" catalog="system" id="m1O-7G-pK2">
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="8"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7IH-Ul-CTB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -87,7 +87,7 @@
                                 </constraints>
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QIL-mv-dTR">
-                                <rect key="frame" x="0.0" y="98" width="414" height="715"/>
+                                <rect key="frame" x="0.0" y="106" width="414" height="707"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -101,11 +101,11 @@
                             <constraint firstItem="wcq-Fd-cYq" firstAttribute="leading" secondItem="1rP-mo-EFW" secondAttribute="leading" id="cfZ-CQ-5ph"/>
                             <constraint firstItem="QIL-mv-dTR" firstAttribute="leading" secondItem="1rP-mo-EFW" secondAttribute="leading" id="il4-Mc-JPL"/>
                             <constraint firstAttribute="trailing" secondItem="wcq-Fd-cYq" secondAttribute="trailing" id="o6Z-P4-Mpr"/>
-                            <constraint firstItem="QIL-mv-dTR" firstAttribute="top" secondItem="wcq-Fd-cYq" secondAttribute="bottom" id="tyw-Bt-bww"/>
+                            <constraint firstItem="QIL-mv-dTR" firstAttribute="top" secondItem="wcq-Fd-cYq" secondAttribute="bottom" constant="8" id="tyw-Bt-bww"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" springLoaded="YES" id="hHr-nU-e8Y">
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="8"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
                     <connections>
                         <outlet property="productTableView" destination="QIL-mv-dTR" id="4FW-la-qMG"/>
@@ -150,7 +150,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Cart" image="cart" catalog="system" id="g8H-rC-jWb">
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="8"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8P2-Qc-UAG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -18,7 +18,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="gFN-P4-sQn">
-                        <rect key="frame" x="0.0" y="0.0" width="458" height="205"/>
+                        <rect key="frame" x="0.0" y="0.0" width="458" height="197.5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="FYd-PL-xQp">
                             <size key="itemSize" width="128" height="128"/>
@@ -28,14 +28,14 @@
                         </collectionViewFlowLayout>
                     </collectionView>
                     <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="qQ8-7m-5Ya">
-                        <rect key="frame" x="167.5" y="210" width="123" height="28"/>
+                        <rect key="frame" x="167.5" y="202.5" width="123" height="28"/>
                         <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="currentPageIndicatorTintColor" systemColor="systemYellowColor"/>
                     </pageControl>
                 </subviews>
                 <constraints>
                     <constraint firstItem="qQ8-7m-5Ya" firstAttribute="centerX" secondItem="gFN-P4-sQn" secondAttribute="centerX" id="7XJ-wk-Vbi"/>
-                    <constraint firstItem="gFN-P4-sQn" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.85" id="8H5-C4-xKd"/>
+                    <constraint firstItem="gFN-P4-sQn" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.82" id="8H5-C4-xKd"/>
                     <constraint firstItem="gFN-P4-sQn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Bc3-VR-aTc"/>
                     <constraint firstAttribute="trailing" secondItem="gFN-P4-sQn" secondAttribute="trailing" id="Jb1-uf-UMb"/>
                     <constraint firstItem="gFN-P4-sQn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="cUI-Qf-cQH"/>
