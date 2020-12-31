@@ -4,7 +4,6 @@
 //
 //  Created by Ahmed Nasr on 12/31/20.
 //
-
 import UIKit
 
 @main
@@ -14,6 +13,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //custom title size in tab bar
+        let font = UIFont.systemFont(ofSize: 15)
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: font], for: .normal)
         return true
     }
 
