@@ -83,14 +83,12 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="zgj-om-J9d">
                                                         <rect key="frame" x="61" y="37.5" width="81" height="122.5"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rbw-cl-hKt">
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" translatesAutoresizingMaskIntoConstraints="NO" id="nzJ-lw-5gZ">
                                                                 <rect key="frame" x="0.0" y="0.0" width="81" height="81"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" secondItem="Rbw-cl-hKt" secondAttribute="height" multiplier="1:1" id="Dnx-Cc-tj6"/>
+                                                                    <constraint firstAttribute="width" secondItem="nzJ-lw-5gZ" secondAttribute="height" multiplier="1:1" id="v4u-fA-kGt"/>
                                                                 </constraints>
-                                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <state key="normal" image="person"/>
-                                                            </button>
+                                                            </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ks4-rh-lZo">
                                                                 <rect key="frame" x="0.0" y="102" width="81" height="20.5"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -102,7 +100,7 @@
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstItem="Rbw-cl-hKt" firstAttribute="width" secondItem="2PB-hA-RPl" secondAttribute="width" multiplier="0.4" id="PLv-AC-AfC"/>
+                                                    <constraint firstItem="nzJ-lw-5gZ" firstAttribute="width" secondItem="2PB-hA-RPl" secondAttribute="width" multiplier="0.4" id="VJj-BY-JUD"/>
                                                     <constraint firstItem="zgj-om-J9d" firstAttribute="centerX" secondItem="2PB-hA-RPl" secondAttribute="centerX" id="WbP-59-Nwh"/>
                                                     <constraint firstItem="zgj-om-J9d" firstAttribute="centerY" secondItem="2PB-hA-RPl" secondAttribute="centerY" id="rEj-8z-p8c"/>
                                                 </constraints>
@@ -113,14 +111,12 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="65B-4p-fqy">
                                                         <rect key="frame" x="61" y="37.5" width="81" height="122.5"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Auq-Rc-7YA">
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="addPerson" translatesAutoresizingMaskIntoConstraints="NO" id="g2t-tv-xm4">
                                                                 <rect key="frame" x="0.0" y="0.0" width="81" height="81"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" secondItem="Auq-Rc-7YA" secondAttribute="height" multiplier="1:1" id="Qtd-LB-X44"/>
+                                                                    <constraint firstAttribute="width" secondItem="g2t-tv-xm4" secondAttribute="height" multiplier="1:1" id="7Z0-38-var"/>
                                                                 </constraints>
-                                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <state key="normal" image="addPerson"/>
-                                                            </button>
+                                                            </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L0q-dS-gW1">
                                                                 <rect key="frame" x="0.0" y="102" width="81" height="20.5"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -133,8 +129,8 @@
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="65B-4p-fqy" firstAttribute="centerX" secondItem="cI9-Jp-ib3" secondAttribute="centerX" id="1u9-2N-fbY"/>
+                                                    <constraint firstItem="g2t-tv-xm4" firstAttribute="width" secondItem="cI9-Jp-ib3" secondAttribute="width" multiplier="0.4" id="k72-A4-gOC"/>
                                                     <constraint firstItem="65B-4p-fqy" firstAttribute="centerY" secondItem="cI9-Jp-ib3" secondAttribute="centerY" id="urc-E0-0d6"/>
-                                                    <constraint firstItem="Auq-Rc-7YA" firstAttribute="width" secondItem="cI9-Jp-ib3" secondAttribute="width" multiplier="0.4" id="y8y-AK-r43"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -410,10 +406,16 @@
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
                     <size key="freeformSize" width="414" height="1096"/>
+                    <connections>
+                        <outlet property="countryView" destination="urZ-Ek-zIj" id="eiy-UT-bpz"/>
+                        <outlet property="languageView" destination="YQM-Ay-Jdh" id="ohi-tM-Dxc"/>
+                        <outlet property="signinView" destination="2PB-hA-RPl" id="Q73-zH-wOJ"/>
+                        <outlet property="signupView" destination="cI9-Jp-ib3" id="mxv-Gl-FPM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7IH-Ul-CTB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-526.08695652173913" y="77.678571428571431"/>
+            <point key="canvasLocation" x="-523" y="145"/>
         </scene>
         <!--Home-->
         <scene sceneID="soe-BI-LIn">
