@@ -17,6 +17,7 @@
 		79083F6B259DCC06003E99AA /* ProductGallaryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79083F69259DCC06003E99AA /* ProductGallaryTableViewCell.xib */; };
 		79083F73259DCC63003E99AA /* ProductGallaryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79083F71259DCC63003E99AA /* ProductGallaryCollectionViewCell.swift */; };
 		79083F74259DCC63003E99AA /* ProductGallaryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79083F72259DCC63003E99AA /* ProductGallaryCollectionViewCell.xib */; };
+		79AEA9CB25A1C9D700FEABD1 /* MyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AEA9CA25A1C9D700FEABD1 /* MyAccountViewController.swift */; };
 		79B96E73259DE86100713054 /* ProductStoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B96E71259DE86100713054 /* ProductStoryTableViewCell.swift */; };
 		79B96E74259DE86100713054 /* ProductStoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79B96E72259DE86100713054 /* ProductStoryTableViewCell.xib */; };
 		79B96E78259DE88D00713054 /* ProductStoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B96E76259DE88D00713054 /* ProductStoryCollectionViewCell.swift */; };
@@ -36,6 +37,7 @@
 		79083F69259DCC06003E99AA /* ProductGallaryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductGallaryTableViewCell.xib; sourceTree = "<group>"; };
 		79083F71259DCC63003E99AA /* ProductGallaryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductGallaryCollectionViewCell.swift; sourceTree = "<group>"; };
 		79083F72259DCC63003E99AA /* ProductGallaryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductGallaryCollectionViewCell.xib; sourceTree = "<group>"; };
+		79AEA9CA25A1C9D700FEABD1 /* MyAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountViewController.swift; sourceTree = "<group>"; };
 		79B96E71259DE86100713054 /* ProductStoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductStoryTableViewCell.swift; sourceTree = "<group>"; };
 		79B96E72259DE86100713054 /* ProductStoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductStoryTableViewCell.xib; sourceTree = "<group>"; };
 		79B96E76259DE88D00713054 /* ProductStoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductStoryCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				79083F63259DCB8D003E99AA /* Home */,
+				79AEA9CA25A1C9D700FEABD1 /* MyAccountViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 			files = (
 				79083F6A259DCC06003E99AA /* ProductGallaryTableViewCell.swift in Sources */,
 				79083F12259DA142003E99AA /* HomeViewController.swift in Sources */,
+				79AEA9CB25A1C9D700FEABD1 /* MyAccountViewController.swift in Sources */,
 				79083F73259DCC63003E99AA /* ProductGallaryCollectionViewCell.swift in Sources */,
 				79083F0E259DA142003E99AA /* AppDelegate.swift in Sources */,
 				79083F10259DA142003E99AA /* SceneDelegate.swift in Sources */,
