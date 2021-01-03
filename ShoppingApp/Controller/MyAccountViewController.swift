@@ -8,8 +8,6 @@ import UIKit
 
 class MyAccountViewController: UIViewController {
 
-    @IBOutlet weak var signInView: UIView!
-    @IBOutlet weak var signUpView: UIStackView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
