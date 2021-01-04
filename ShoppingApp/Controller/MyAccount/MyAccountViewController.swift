@@ -25,7 +25,9 @@ class MyAccountViewController: UIViewController {
         signupView.addGestureRecognizer(signUpGesture)
     }
     @objc func signinOnClick(sender: UITapGestureRecognizer){
-        print("go to sign in page")
+        let loginSt = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginViewController")
+        loginSt.modalPresentationStyle = .fullScreen
+        self.present(loginSt, animated: true, completion: nil)
     }
     @objc func signupOnClick(sender: UITapGestureRecognizer){
         print("go to sign up page")
