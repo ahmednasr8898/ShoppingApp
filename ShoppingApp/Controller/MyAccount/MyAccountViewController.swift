@@ -11,8 +11,8 @@ class MyAccountViewController: UIViewController {
     @IBOutlet weak var signinView: UIView!
     @IBOutlet weak var signupView: UIView!
     @IBOutlet weak var countryView: UIView!
-    
     @IBOutlet weak var languageView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         addActionToView()
@@ -30,6 +30,8 @@ class MyAccountViewController: UIViewController {
         self.present(loginSt, animated: true, completion: nil)
     }
     @objc func signupOnClick(sender: UITapGestureRecognizer){
-        print("go to sign up page")
+        let registerSt = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RegisterViewController")
+        registerSt.modalPresentationStyle = .fullScreen
+        self.present(registerSt, animated: true, completion: nil)
     }
 }

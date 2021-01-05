@@ -1,11 +1,11 @@
 //
-//  LoginController+extension.swift
+//  RegisterViewController+extension.swift
 //  ShoppingApp
 //
-//  Created by Ahmed Nasr on 1/4/21.
+//  Created by Ahmed Nasr on 1/5/21.
 //
 import UIKit
-extension LoginViewController{
+extension RegisterViewController{
     func setUpTopStackVeiw(){
         view.addSubview(topStackView)
         topStackView.translatesAutoresizingMaskIntoConstraints = false
@@ -25,17 +25,48 @@ extension LoginViewController{
         cancelImage.translatesAutoresizingMaskIntoConstraints = false
         cancelImage.widthAnchor.constraint(equalToConstant: view.frame.width * 0.06).isActive = true
     }
-    func setUpAhlanLabel(){
-        view.addSubview(ahlanLabel)
-        ahlanLabel.translatesAutoresizingMaskIntoConstraints = false
-        ahlanLabel.topAnchor.constraint(equalTo: topStackView.bottomAnchor, constant:
+    func setUpCreateNoonLabel(){
+        view.addSubview(createnoonLabel)
+        createnoonLabel.translatesAutoresizingMaskIntoConstraints = false
+        createnoonLabel.topAnchor.constraint(equalTo: topStackView.bottomAnchor, constant:
                                             view.frame.height * 12/896).isActive = true
-        ahlanLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        createnoonLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
     }
+    func setUpFirstNameStackView(){
+        view.addSubview(firstNameStackView)
+        firstNameStackView.translatesAutoresizingMaskIntoConstraints = false
+        firstNameStackView.topAnchor.constraint(equalTo: createnoonLabel.bottomAnchor, constant:
+                                                view.frame.height * 32/896).isActive = true
+        firstNameStackView.widthAnchor.constraint(equalToConstant: view.frame.width * 0.8).isActive = true
+        firstNameStackView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        
+        firstNameStackView.addArrangedSubview(firstNameLabel)
+        firstNameStackView.addArrangedSubview(firstNameTextField)
+      
+        firstNameTextField.translatesAutoresizingMaskIntoConstraints = false
+        firstNameTextField.heightAnchor.constraint(equalToConstant:
+                                                view.frame.height * 42/896).isActive = true
+    }
+    func setUpLastNameStackView(){
+        view.addSubview(lastNameStackView)
+        lastNameStackView.translatesAutoresizingMaskIntoConstraints = false
+        lastNameStackView.topAnchor.constraint(equalTo: firstNameStackView.bottomAnchor, constant:
+                                                view.frame.height * 32/896).isActive = true
+        lastNameStackView.widthAnchor.constraint(equalTo: firstNameStackView.widthAnchor).isActive = true
+        lastNameStackView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+
+        lastNameStackView.addArrangedSubview(lastNameLabel)
+        lastNameStackView.addArrangedSubview(lastNameTextField)
+        
+        lastNameTextField.translatesAutoresizingMaskIntoConstraints = false
+        lastNameTextField.heightAnchor.constraint(equalToConstant:
+                                                    view.frame.height * 42/896).isActive = true
+    }
+    
     func setUpEmailStackView(){
         view.addSubview(emailStackView)
         emailStackView.translatesAutoresizingMaskIntoConstraints = false
-        emailStackView.topAnchor.constraint(equalTo: ahlanLabel.bottomAnchor, constant:
+        emailStackView.topAnchor.constraint(equalTo: lastNameStackView.bottomAnchor, constant:
                                                 view.frame.height * 32/896).isActive = true
         emailStackView.widthAnchor.constraint(equalToConstant: view.frame.width * 0.8).isActive = true
         emailStackView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
@@ -47,6 +78,7 @@ extension LoginViewController{
         emailTextField.heightAnchor.constraint(equalToConstant:
                                                 view.frame.height * 42/896).isActive = true
     }
+    
     func setUpPasswordStackView(){
         view.addSubview(passwordStackView)
         passwordStackView.translatesAutoresizingMaskIntoConstraints = false
@@ -68,26 +100,19 @@ extension LoginViewController{
         showPasswordButton.centerYAnchor.constraint(equalTo: passwordTextField.centerYAnchor).isActive = true
         showPasswordButton.trailingAnchor.constraint(equalTo: passwordTextField.trailingAnchor, constant: -6).isActive = true
     }
-    func setUpForgotPassword(){
-        view.addSubview(forgotButton)
-        forgotButton.translatesAutoresizingMaskIntoConstraints = false
-        forgotButton.topAnchor.constraint(equalTo: passwordStackView.bottomAnchor, constant:
-                                            view.frame.height * 30/896).isActive = true
-        forgotButton.leadingAnchor.constraint(equalTo: passwordTextField.leadingAnchor).isActive = true
-    }
-    func setUpSigninButton(){
-        view.addSubview(signinButton)
-        signinButton.translatesAutoresizingMaskIntoConstraints = false
-        signinButton.topAnchor.constraint(equalTo: forgotButton.bottomAnchor, constant:
+    func setUpSignupButton(){
+        view.addSubview(signupButton)
+        signupButton.translatesAutoresizingMaskIntoConstraints = false
+        signupButton.topAnchor.constraint(equalTo: passwordStackView.bottomAnchor, constant:
                                             view.frame.height * 25/896).isActive = true
-        signinButton.widthAnchor.constraint(equalToConstant: view.frame.width * 0.8).isActive = true
-        signinButton.heightAnchor.constraint(equalToConstant: view.frame.height * 0.07).isActive = true
-        signinButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        signupButton.widthAnchor.constraint(equalToConstant: view.frame.width * 0.8).isActive = true
+        signupButton.heightAnchor.constraint(equalToConstant: view.frame.height * 0.07).isActive = true
+        signupButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
     }
     func setUpHaveAccountButton(){
         view.addSubview(haveAccountButton)
         haveAccountButton.translatesAutoresizingMaskIntoConstraints = false
-        haveAccountButton.topAnchor.constraint(equalTo: signinButton.bottomAnchor, constant:
+        haveAccountButton.topAnchor.constraint(equalTo: signupButton.bottomAnchor, constant:
                                                 view.frame.height * 30/896).isActive = true
         haveAccountButton.leadingAnchor.constraint(equalTo: emailStackView.leadingAnchor).isActive = true
     }

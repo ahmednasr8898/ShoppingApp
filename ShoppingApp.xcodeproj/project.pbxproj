@@ -24,6 +24,8 @@
 		79B96E74259DE86100713054 /* ProductStoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79B96E72259DE86100713054 /* ProductStoryTableViewCell.xib */; };
 		79B96E78259DE88D00713054 /* ProductStoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B96E76259DE88D00713054 /* ProductStoryCollectionViewCell.swift */; };
 		79B96E79259DE88D00713054 /* ProductStoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79B96E77259DE88D00713054 /* ProductStoryCollectionViewCell.xib */; };
+		79EC60FE25A4B6570057DF78 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EC60FD25A4B6570057DF78 /* RegisterViewController.swift */; };
+		79EC610125A4B68F0057DF78 /* RegisterViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EC610025A4B68F0057DF78 /* RegisterViewController+extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		79B96E72259DE86100713054 /* ProductStoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductStoryTableViewCell.xib; sourceTree = "<group>"; };
 		79B96E76259DE88D00713054 /* ProductStoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductStoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		79B96E77259DE88D00713054 /* ProductStoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductStoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		79EC60FD25A4B6570057DF78 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		79EC610025A4B68F0057DF78 /* RegisterViewController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RegisterViewController+extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +166,8 @@
 			children = (
 				7920A82A25A34881003D5741 /* LoginViewController+extension.swift */,
 				7920A82625A3245B003D5741 /* LoginViewController.swift */,
+				79EC60FD25A4B6570057DF78 /* RegisterViewController.swift */,
+				79EC610025A4B68F0057DF78 /* RegisterViewController+extension.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -295,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7920A82725A3245B003D5741 /* LoginViewController.swift in Sources */,
+				79EC60FE25A4B6570057DF78 /* RegisterViewController.swift in Sources */,
 				79083F6A259DCC06003E99AA /* ProductGallaryTableViewCell.swift in Sources */,
 				79083F12259DA142003E99AA /* HomeViewController.swift in Sources */,
 				79AEA9CB25A1C9D700FEABD1 /* MyAccountViewController.swift in Sources */,
@@ -302,6 +309,7 @@
 				79083F0E259DA142003E99AA /* AppDelegate.swift in Sources */,
 				79083F10259DA142003E99AA /* SceneDelegate.swift in Sources */,
 				79B96E73259DE86100713054 /* ProductStoryTableViewCell.swift in Sources */,
+				79EC610125A4B68F0057DF78 /* RegisterViewController+extension.swift in Sources */,
 				79B96E78259DE88D00713054 /* ProductStoryCollectionViewCell.swift in Sources */,
 				7920A82B25A34881003D5741 /* LoginViewController+extension.swift in Sources */,
 			);
