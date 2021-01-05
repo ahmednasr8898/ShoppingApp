@@ -37,6 +37,13 @@ extension RegisterViewController{
         topStackView.addArrangedSubview(cancelImage)
         cancelImage.translatesAutoresizingMaskIntoConstraints = false
         cancelImage.widthAnchor.constraint(equalToConstant: view.frame.width * 0.06).isActive = true
+        //Handel
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(cancelOnClick(sender:)))
+        cancelImage.addGestureRecognizer(tapGesture)
+        cancelImage.isUserInteractionEnabled = true
+    }
+    @objc func cancelOnClick(sender: UITapGestureRecognizer){
+        dismiss(animated: true, completion: nil)
     }
     func setUpCreateNoonLabel(){
         //Properties
