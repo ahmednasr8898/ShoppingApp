@@ -23,6 +23,7 @@
 		799E8F7F25A4E34D007BAE93 /* MainProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 799E8F7D25A4E34C007BAE93 /* MainProductTableViewCell.xib */; };
 		799E8F8325A4E379007BAE93 /* MainProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E8F8125A4E379007BAE93 /* MainProductCollectionViewCell.swift */; };
 		799E8F8425A4E379007BAE93 /* MainProductCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 799E8F8225A4E379007BAE93 /* MainProductCollectionViewCell.xib */; };
+		799E8F8725A50FEF007BAE93 /* CustomFontSizeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E8F8625A50FEF007BAE93 /* CustomFontSizeLabel.swift */; };
 		79AEA9CB25A1C9D700FEABD1 /* MyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AEA9CA25A1C9D700FEABD1 /* MyAccountViewController.swift */; };
 		79B96E73259DE86100713054 /* ProductStoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B96E71259DE86100713054 /* ProductStoryTableViewCell.swift */; };
 		79B96E74259DE86100713054 /* ProductStoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79B96E72259DE86100713054 /* ProductStoryTableViewCell.xib */; };
@@ -51,6 +52,7 @@
 		799E8F7D25A4E34C007BAE93 /* MainProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainProductTableViewCell.xib; sourceTree = "<group>"; };
 		799E8F8125A4E379007BAE93 /* MainProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainProductCollectionViewCell.swift; sourceTree = "<group>"; };
 		799E8F8225A4E379007BAE93 /* MainProductCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainProductCollectionViewCell.xib; sourceTree = "<group>"; };
+		799E8F8625A50FEF007BAE93 /* CustomFontSizeLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFontSizeLabel.swift; sourceTree = "<group>"; };
 		79AEA9CA25A1C9D700FEABD1 /* MyAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountViewController.swift; sourceTree = "<group>"; };
 		79B96E71259DE86100713054 /* ProductStoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductStoryTableViewCell.swift; sourceTree = "<group>"; };
 		79B96E72259DE86100713054 /* ProductStoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductStoryTableViewCell.xib; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				79083F0C259DA142003E99AA /* ShoppingApp */,
+				799E8F8625A50FEF007BAE93 /* CustomFontSizeLabel.swift */,
 				79083F0B259DA142003E99AA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 				79083F73259DCC63003E99AA /* ProductGallaryCollectionViewCell.swift in Sources */,
 				79083F0E259DA142003E99AA /* AppDelegate.swift in Sources */,
 				799E8F7E25A4E34C007BAE93 /* MainProductTableViewCell.swift in Sources */,
+				799E8F8725A50FEF007BAE93 /* CustomFontSizeLabel.swift in Sources */,
 				79083F10259DA142003E99AA /* SceneDelegate.swift in Sources */,
 				799E8F8325A4E379007BAE93 /* MainProductCollectionViewCell.swift in Sources */,
 				79B96E73259DE86100713054 /* ProductStoryTableViewCell.swift in Sources */,

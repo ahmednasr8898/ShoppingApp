@@ -41,15 +41,16 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Fw3-gS-UG3">
-                                <rect key="frame" x="11.5" y="296.5" width="209" height="35"/>
+                                <rect key="frame" x="6" y="296.5" width="220" height="35"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fulfilment_express-en" translatesAutoresizingMaskIntoConstraints="NO" id="K7x-Au-3PL">
-                                        <rect key="frame" x="0.0" y="0.0" width="97" height="35"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="102.5" height="35"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6% OFF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5i3-fv-bjZ">
-                                        <rect key="frame" x="112" y="0.0" width="97" height="35"/>
+                                        <rect key="frame" x="117.5" y="0.0" width="102.5" height="35"/>
+                                        <color key="backgroundColor" red="0.21980859500668667" green="0.85516515544041449" blue="0.38595727088480847" alpha="0.64079005281690138" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <color key="textColor" red="0.1204296638614703" green="0.55990932642487046" blue="0.17751765451264445" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.074658552185481425" green="0.29045903497409331" blue="0.13109137542525531" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -70,7 +71,7 @@
                             <constraint firstItem="lW1-Vx-ToP" firstAttribute="width" secondItem="XUq-cM-vJI" secondAttribute="width" id="iBk-Yl-udw"/>
                             <constraint firstItem="0hv-8E-nZh" firstAttribute="top" secondItem="7Io-4Y-jZG" secondAttribute="top" constant="12" id="jw3-ch-Y8w"/>
                             <constraint firstItem="Fw3-gS-UG3" firstAttribute="centerX" secondItem="7Io-4Y-jZG" secondAttribute="centerX" id="kde-Zf-ZXY"/>
-                            <constraint firstItem="Fw3-gS-UG3" firstAttribute="width" secondItem="7Io-4Y-jZG" secondAttribute="width" multiplier="0.9" id="klY-BW-kxu"/>
+                            <constraint firstItem="Fw3-gS-UG3" firstAttribute="width" secondItem="7Io-4Y-jZG" secondAttribute="width" multiplier="0.95" id="klY-BW-kxu"/>
                             <constraint firstItem="lW1-Vx-ToP" firstAttribute="top" secondItem="XUq-cM-vJI" secondAttribute="bottom" constant="8" id="l1D-me-1Cc"/>
                             <constraint firstItem="XUq-cM-vJI" firstAttribute="height" secondItem="7Io-4Y-jZG" secondAttribute="height" multiplier="0.08" id="leO-Av-CuO"/>
                             <constraint firstItem="q5H-Gw-TUn" firstAttribute="width" secondItem="7Io-4Y-jZG" secondAttribute="width" multiplier="0.7" id="wfx-jk-x2u"/>
@@ -89,6 +90,7 @@
             <connections>
                 <outlet property="ProductVeiw" destination="7Io-4Y-jZG" id="Df8-Ot-DGx"/>
                 <outlet property="loveButton" destination="0hv-8E-nZh" id="wGO-TH-zUM"/>
+                <outlet property="offerLabel" destination="5i3-fv-bjZ" id="pyW-Rj-3Bs"/>
                 <outlet property="productDescriptionLabel" destination="XUq-cM-vJI" id="K16-X2-Jra"/>
                 <outlet property="productImage" destination="q5H-Gw-TUn" id="Eyn-ux-ad0"/>
                 <outlet property="productPriceLabel" destination="lW1-Vx-ToP" id="WB1-te-ebN"/>
