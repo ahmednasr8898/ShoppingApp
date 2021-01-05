@@ -77,7 +77,6 @@
 			isa = PBXGroup;
 			children = (
 				79083F0C259DA142003E99AA /* ShoppingApp */,
-				799E8F8625A50FEF007BAE93 /* CustomFontSizeLabel.swift */,
 				79083F0B259DA142003E99AA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -95,6 +94,7 @@
 			children = (
 				79083F62259DCB86003E99AA /* Controller */,
 				79083F64259DCB98003E99AA /* Cell */,
+				799E8F8B25A512F1007BAE93 /* Custom */,
 				79B96E69259DD9F200713054 /* Storyboard */,
 				79B96E68259DD9E400713054 /* Delegate */,
 				79B96E6A259DDA0000713054 /* Resources */,
@@ -209,6 +209,14 @@
 				799E8F7D25A4E34C007BAE93 /* MainProductTableViewCell.xib */,
 			);
 			path = TableView;
+			sourceTree = "<group>";
+		};
+		799E8F8B25A512F1007BAE93 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				799E8F8625A50FEF007BAE93 /* CustomFontSizeLabel.swift */,
+			);
+			path = Custom;
 			sourceTree = "<group>";
 		};
 		79B96E68259DD9E400713054 /* Delegate */ = {
