@@ -48,9 +48,12 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
             return tableView.frame.height * 0.28
         }
         if indexPath.row == 1{
-            return tableView.frame.height * 0.17
+            //return tableView.frame.height * 0.17
+            //return tableView.frame.height * 0.25
+            return 150
         }
-        return 300
+       // return view.frame.height * 370 / 896
+        return 370
     }
 }
 

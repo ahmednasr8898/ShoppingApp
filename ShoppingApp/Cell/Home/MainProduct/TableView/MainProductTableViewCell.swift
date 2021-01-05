@@ -10,12 +10,16 @@ import UIKit
 class MainProductTableViewCell: UITableViewCell {
 
     @IBOutlet weak var productCollectionView: UICollectionView!
-    let arrOfProduct = [ProductDetailse]()
+    @IBOutlet weak var SectionLabel: UILabel!
+    @IBOutlet weak var showNowButton: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
         setUpCollectionView()
+        
+        showNowButton.layer.borderWidth = 0.9
+        showNowButton.layer.borderColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
     }
     func setUpCollectionView(){
         productCollectionView.register(UINib(nibName: "MainProductCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "MainProductCollectionViewCell")
@@ -33,11 +37,9 @@ extension MainProductTableViewCell: UICollectionViewDataSource, UICollectionView
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.frame.width * 0.4, height: 300)
+        //300
     }
-}
-
-struct ProductDetailse {
-    let ProductImage: UIImageView
-    let productDescription: String
-    let productProce: String
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 0, left: 8, bottom: 0, right: 8)
+    }
 }
