@@ -12,7 +12,7 @@ class ProductGallaryTableViewCell: UITableViewCell {
     @IBOutlet weak var pageControl: UIPageControl!
     var timer: Timer?
     var currentIndexPath = 0
-    let productGalleryImages = [UIImage(named: "1"),UIImage(named: "2"),UIImage(named: "3"),UIImage(named: "4"), UIImage(named: "5")]
+    let productGalleryImages = [UIImage(named: "ar_banner-1"),UIImage(named: "ar_banner-2"),UIImage(named: "ar_banner-3"),UIImage(named: "ar_banner-4"), UIImage(named: "ar_banner-5"), UIImage(named: "ar_banner-6")]
     
     override func awakeFromNib() {
         super.awakeFromNib()

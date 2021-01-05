@@ -9,6 +9,8 @@ import UIKit
 class ProductStoryTableViewCell: UITableViewCell {
 
     @IBOutlet weak var collectionView: UICollectionView!
+    let productStoryImages = [UIImage(named: "st-1"), UIImage(named: "st-2"),UIImage(named: "st-3"),UIImage(named: "st-4"), UIImage(named: "st-5"), UIImage(named: "st-6"), UIImage(named: "st-7"),UIImage(named: "st-8")]
+    let productStoryName = ["Baby","Mobile","Fashion","Kitchen","Grocery","TVs","Beauty","Electronics"]
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,12 +24,12 @@ class ProductStoryTableViewCell: UITableViewCell {
 }
 extension ProductStoryTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 8
+        return productStoryImages.count
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ProductStoryCollectionViewCell", for: indexPath) as! ProductStoryCollectionViewCell
-        cell.productNameLabel.text = "Mobile"
-        cell.productImageView.image = UIImage(named: "1")
+        cell.productNameLabel.text = productStoryName[indexPath.row]
+        cell.productImageView.image = productStoryImages[indexPath.row]
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

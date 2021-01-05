@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MainProductCollectionViewCell" id="gTV-IL-0wX" customClass="MainProductCollectionViewCell" customModule="ShoppingApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="232" height="350"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="232" height="350"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Io-4Y-jZG">
+                        <rect key="frame" x="0.0" y="0.0" width="232" height="350"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="st-2" translatesAutoresizingMaskIntoConstraints="NO" id="q5H-Gw-TUn">
+                                <rect key="frame" x="35" y="52" width="162" height="164.5"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hv-8E-nZh">
+                                <rect key="frame" x="199.5" y="12" width="20.5" height="22"/>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="heart" catalog="system"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Xiaomi poco x3 Dual SIM" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUq-cM-vJI">
+                                <rect key="frame" x="11.5" y="234.5" width="209" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EGP 3,988.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lW1-Vx-ToP">
+                                <rect key="frame" x="11.5" y="270.5" width="209" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Fw3-gS-UG3">
+                                <rect key="frame" x="11.5" y="296.5" width="209" height="35"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fulfilment_express-en" translatesAutoresizingMaskIntoConstraints="NO" id="K7x-Au-3PL">
+                                        <rect key="frame" x="0.0" y="0.0" width="97" height="35"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6% OFF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5i3-fv-bjZ">
+                                        <rect key="frame" x="112" y="0.0" width="97" height="35"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.1204296638614703" green="0.55990932642487046" blue="0.17751765451264445" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="0hv-8E-nZh" secondAttribute="trailing" constant="12" id="Aze-rT-mZj"/>
+                            <constraint firstItem="XUq-cM-vJI" firstAttribute="top" secondItem="q5H-Gw-TUn" secondAttribute="bottom" constant="18" id="EdU-UO-Fxc"/>
+                            <constraint firstItem="q5H-Gw-TUn" firstAttribute="height" secondItem="7Io-4Y-jZG" secondAttribute="height" multiplier="0.47" id="Fft-sK-0CY"/>
+                            <constraint firstItem="XUq-cM-vJI" firstAttribute="width" secondItem="7Io-4Y-jZG" secondAttribute="width" multiplier="0.9" id="GGQ-wV-8Bw"/>
+                            <constraint firstItem="lW1-Vx-ToP" firstAttribute="centerX" secondItem="7Io-4Y-jZG" secondAttribute="centerX" id="KDg-Lh-3p6"/>
+                            <constraint firstItem="XUq-cM-vJI" firstAttribute="centerX" secondItem="7Io-4Y-jZG" secondAttribute="centerX" id="MRC-zm-IXc"/>
+                            <constraint firstItem="Fw3-gS-UG3" firstAttribute="top" secondItem="lW1-Vx-ToP" secondAttribute="bottom" constant="8" id="SM3-YH-J6B"/>
+                            <constraint firstItem="q5H-Gw-TUn" firstAttribute="centerX" secondItem="7Io-4Y-jZG" secondAttribute="centerX" id="VAX-Qf-Sfa"/>
+                            <constraint firstItem="Fw3-gS-UG3" firstAttribute="height" secondItem="7Io-4Y-jZG" secondAttribute="height" multiplier="0.1" id="ak1-5w-CZM"/>
+                            <constraint firstItem="q5H-Gw-TUn" firstAttribute="top" secondItem="0hv-8E-nZh" secondAttribute="bottom" constant="18" id="clT-Kg-2uH"/>
+                            <constraint firstItem="lW1-Vx-ToP" firstAttribute="width" secondItem="XUq-cM-vJI" secondAttribute="width" id="iBk-Yl-udw"/>
+                            <constraint firstItem="0hv-8E-nZh" firstAttribute="top" secondItem="7Io-4Y-jZG" secondAttribute="top" constant="12" id="jw3-ch-Y8w"/>
+                            <constraint firstItem="Fw3-gS-UG3" firstAttribute="centerX" secondItem="7Io-4Y-jZG" secondAttribute="centerX" id="kde-Zf-ZXY"/>
+                            <constraint firstItem="Fw3-gS-UG3" firstAttribute="width" secondItem="7Io-4Y-jZG" secondAttribute="width" multiplier="0.9" id="klY-BW-kxu"/>
+                            <constraint firstItem="lW1-Vx-ToP" firstAttribute="top" secondItem="XUq-cM-vJI" secondAttribute="bottom" constant="8" id="l1D-me-1Cc"/>
+                            <constraint firstItem="XUq-cM-vJI" firstAttribute="height" secondItem="7Io-4Y-jZG" secondAttribute="height" multiplier="0.08" id="leO-Av-CuO"/>
+                            <constraint firstItem="q5H-Gw-TUn" firstAttribute="width" secondItem="7Io-4Y-jZG" secondAttribute="width" multiplier="0.7" id="wfx-jk-x2u"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="7Io-4Y-jZG" secondAttribute="trailing" id="490-By-zCS"/>
+                <constraint firstAttribute="bottom" secondItem="7Io-4Y-jZG" secondAttribute="bottom" id="630-Ad-ohP"/>
+                <constraint firstItem="7Io-4Y-jZG" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Ks0-Af-Tgu"/>
+                <constraint firstItem="7Io-4Y-jZG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="q3X-cK-vGS"/>
+            </constraints>
+            <size key="customSize" width="232" height="350"/>
+            <connections>
+                <outlet property="ProductVeiw" destination="7Io-4Y-jZG" id="Df8-Ot-DGx"/>
+                <outlet property="loveButton" destination="0hv-8E-nZh" id="wGO-TH-zUM"/>
+                <outlet property="productDescriptionLabel" destination="XUq-cM-vJI" id="K16-X2-Jra"/>
+                <outlet property="productImage" destination="q5H-Gw-TUn" id="Eyn-ux-ad0"/>
+                <outlet property="productPriceLabel" destination="lW1-Vx-ToP" id="WB1-te-ebN"/>
+            </connections>
+            <point key="canvasLocation" x="179.71014492753625" y="121.875"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="fulfilment_express-en" width="422" height="100"/>
+        <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="st-2" width="202" height="249"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -19,6 +19,7 @@ class HomeViewController: UIViewController {
     func setUpTableView(){
         productTableView.register(UINib(nibName: "ProductGallaryTableViewCell", bundle: nil), forCellReuseIdentifier: "ProductGallaryTableViewCell")
         productTableView.register(UINib(nibName: "ProductStoryTableViewCell", bundle: nil), forCellReuseIdentifier: "ProductStoryTableViewCell")
+        productTableView.register(UINib(nibName: "MainProductTableViewCell", bundle: nil), forCellReuseIdentifier: "MainProductTableViewCell")
         productTableView.delegate = self
         productTableView.dataSource = self
         productTableView.tableFooterView = UIView()
@@ -27,14 +28,18 @@ class HomeViewController: UIViewController {
 }
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return 8
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0{
             let cell = tableView.dequeueReusableCell(withIdentifier: "ProductGallaryTableViewCell", for: indexPath)
             return cell
         }
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ProductStoryTableViewCell", for: indexPath)
+        if indexPath.row == 1{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ProductStoryTableViewCell", for: indexPath)
+            return cell
+        }
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MainProductTableViewCell", for: indexPath)
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -42,7 +47,10 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
         if indexPath.row == 0{
             return tableView.frame.height * 0.28
         }
-        return tableView.frame.height * 0.17
+        if indexPath.row == 1{
+            return tableView.frame.height * 0.17
+        }
+        return 300
     }
 }
 
