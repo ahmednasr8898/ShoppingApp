@@ -1,25 +1,19 @@
 //
-//  MainProductTableViewCell.swift
+//  MainProductShopNowTableViewCell.swift
 //  ShoppingApp
 //
-//  Created by Ahmed Nasr on 1/5/21.
+//  Created by Ahmed Nasr on 1/6/21.
 //
 
 import UIKit
 
-class MainProductTableViewCell: UITableViewCell {
+class MainProductShopNowTableViewCell: UITableViewCell {
 
     @IBOutlet weak var productCollectionView: UICollectionView!
-    @IBOutlet weak var SectionLabel: UILabel!
-    @IBOutlet weak var showNowButton: UIButton!
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
         setUpCollectionView()
-        
-        showNowButton.layer.borderWidth = 0.9
-        showNowButton.layer.borderColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
     }
     func setUpCollectionView(){
         productCollectionView.register(UINib(nibName: "MainProductCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "MainProductCollectionViewCell")
@@ -27,21 +21,27 @@ class MainProductTableViewCell: UITableViewCell {
         productCollectionView.dataSource = self
     }
 }
-extension MainProductTableViewCell: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
+extension MainProductShopNowTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 8
+        return 12
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MainProductCollectionViewCell", for: indexPath) as! MainProductCollectionViewCell
+        cell.ProductVeiw.layer.borderColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
         cell.ProductVeiw.layer.borderWidth = 1
-        cell.ProductVeiw.layer.borderColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.width * 0.45, height: 310)
+        return CGSize(width: collectionView.frame.width * 0.475, height: 310)
         //300
     }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 10
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        0.1
+    }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 0, left: 8, bottom: 0, right: 8)
+        return UIEdgeInsets(top: 1, left: 2, bottom: 1, right: 2)
     }
 }

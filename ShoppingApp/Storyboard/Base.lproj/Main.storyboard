@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AfP-4D-u10">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="B69-eE-j8H">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
@@ -501,6 +501,59 @@
             </objects>
             <point key="canvasLocation" x="-2555.072463768116" y="78.348214285714278"/>
         </scene>
+        <!--Shop Now View Controller-->
+        <scene sceneID="TBD-xL-rqg">
+            <objects>
+                <viewController id="B69-eE-j8H" customClass="ShopNowViewController" customModule="ShoppingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="z20-6A-BRK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noon" translatesAutoresizingMaskIntoConstraints="NO" id="xyV-jn-EcK">
+                                <rect key="frame" x="69.5" y="48" width="124" height="54"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.left" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="rUb-OP-Dbf">
+                                <rect key="frame" x="8" y="50.5" width="41.5" height="49"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qz9-jx-rtN">
+                                <rect key="frame" x="0.0" y="110" width="414" height="752"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magnifyingglass" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="NEF-1Z-MxS">
+                                <rect key="frame" x="364.5" y="49" width="41.5" height="52"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QWq-VN-yD1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NEF-1Z-MxS" firstAttribute="width" secondItem="z20-6A-BRK" secondAttribute="width" multiplier="0.1" id="0Ds-mQ-JlO"/>
+                            <constraint firstItem="QWq-VN-yD1" firstAttribute="trailing" secondItem="NEF-1Z-MxS" secondAttribute="trailing" constant="8" id="1wU-Ef-gCi"/>
+                            <constraint firstItem="rUb-OP-Dbf" firstAttribute="width" secondItem="z20-6A-BRK" secondAttribute="width" multiplier="0.1" id="2RR-Cn-vdq"/>
+                            <constraint firstItem="NEF-1Z-MxS" firstAttribute="top" secondItem="QWq-VN-yD1" secondAttribute="top" constant="4" id="3l7-aY-dH2"/>
+                            <constraint firstItem="QWq-VN-yD1" firstAttribute="bottom" secondItem="qz9-jx-rtN" secondAttribute="bottom" id="7Jz-hE-ALp"/>
+                            <constraint firstItem="xyV-jn-EcK" firstAttribute="centerY" secondItem="rUb-OP-Dbf" secondAttribute="centerY" id="EDI-C0-va8"/>
+                            <constraint firstItem="rUb-OP-Dbf" firstAttribute="height" secondItem="z20-6A-BRK" secondAttribute="height" multiplier="0.06" id="FxL-JU-pu0"/>
+                            <constraint firstItem="NEF-1Z-MxS" firstAttribute="centerY" secondItem="rUb-OP-Dbf" secondAttribute="centerY" id="Pwp-ln-MRu"/>
+                            <constraint firstItem="QWq-VN-yD1" firstAttribute="trailing" secondItem="qz9-jx-rtN" secondAttribute="trailing" id="XfA-q1-3aw"/>
+                            <constraint firstItem="rUb-OP-Dbf" firstAttribute="top" secondItem="QWq-VN-yD1" secondAttribute="top" constant="4" id="ZkB-xn-KhV"/>
+                            <constraint firstItem="xyV-jn-EcK" firstAttribute="leading" secondItem="rUb-OP-Dbf" secondAttribute="trailing" constant="20" id="cgV-kt-6lw"/>
+                            <constraint firstItem="rUb-OP-Dbf" firstAttribute="leading" secondItem="QWq-VN-yD1" secondAttribute="leading" constant="8" id="h8V-kL-7JC"/>
+                            <constraint firstItem="qz9-jx-rtN" firstAttribute="top" secondItem="xyV-jn-EcK" secondAttribute="bottom" constant="8" id="jgh-YW-n2n"/>
+                            <constraint firstItem="xyV-jn-EcK" firstAttribute="width" secondItem="z20-6A-BRK" secondAttribute="width" multiplier="0.3" id="yFJ-yT-ro0"/>
+                            <constraint firstItem="qz9-jx-rtN" firstAttribute="leading" secondItem="QWq-VN-yD1" secondAttribute="leading" id="zn9-cv-s1f"/>
+                            <constraint firstItem="xyV-jn-EcK" firstAttribute="top" secondItem="QWq-VN-yD1" secondAttribute="top" constant="4" id="zsM-mj-sXu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ProductTableView" destination="qz9-jx-rtN" id="lUu-pm-f2z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KHl-Ah-bgE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2562.3188405797105" y="712.5"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="zf7-30-aFt">
             <objects>
@@ -545,6 +598,7 @@
     </scenes>
     <resources>
         <image name="addPerson" width="256" height="256"/>
+        <image name="arrow.left" catalog="system" width="128" height="98"/>
         <image name="arrowshape.zigzag.right" catalog="system" width="128" height="93"/>
         <image name="callback" width="96" height="96"/>
         <image name="cart" catalog="system" width="128" height="102"/>
@@ -556,6 +610,7 @@
         <image name="instagram" width="96" height="96"/>
         <image name="language" width="512" height="512"/>
         <image name="linkedin" width="96" height="96"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="noon" width="260" height="120"/>
         <image name="person" width="256" height="256"/>
         <image name="person" catalog="system" width="128" height="117"/>
