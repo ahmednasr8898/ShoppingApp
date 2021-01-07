@@ -4,13 +4,13 @@
 //
 //  Created by Ahmed Nasr on 1/6/21.
 //
-
 import UIKit
 
 class ShopNowViewController: UIViewController {
 
     @IBOutlet weak var ProductTableView: UITableView!
     @IBOutlet weak var backImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpProductTableView()

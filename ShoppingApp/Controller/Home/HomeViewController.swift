@@ -11,7 +11,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var productTableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     var arrOfProduct = [ProductModel]()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         searchBar.backgroundImage = UIImage()
@@ -61,41 +61,26 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
             //return tableView.frame.height * 0.25
             return 150
         }
-       // return view.frame.height * 370 / 896
+        //return view.frame.height * 370 / 896
         return 370
     }
 }
 extension HomeViewController{
-    /*["Noon Picks","Top Electronic","Fashoin Picks","Beauty Picks","Healthy Essentials","Top Home Picks","SuperMarkts Offers","Baby Picks"]*/
     func setData(){
-        let noonPicks = ProductDetails(productImage: UIImage(named: "st-1")!, productDescription: "Baby Picks", productPrice: "120")
-        let noonPicks1 = ProductDetails(productImage: UIImage(named: "st-1")!, productDescription: "Baby Picks", productPrice: "130")
-        let noonPicks2 = ProductDetails(productImage: UIImage(named: "st-1")!, productDescription: "Baby Picks", productPrice: "140")
-        let noonPicks3 = ProductDetails(productImage: UIImage(named: "st-1")!, productDescription: "Baby Picks", productPrice: "150")
-        self.arrOfProduct.append(ProductModel(titleSection: "Baby Picks", productDetails: [noonPicks,noonPicks1,noonPicks2,noonPicks3]))
-        
-        let topElectronic = ProductDetails(productImage: UIImage(named: "st-8")!, productDescription: "Top Electronic", productPrice: "120")
-        let topElectronic1 = ProductDetails(productImage: UIImage(named: "st-8")!, productDescription: "Top Electronic", productPrice: "130")
-        let topElectronic2 = ProductDetails(productImage: UIImage(named: "st-8")!, productDescription: "Top Electronic", productPrice: "140")
-        let topElectronic3 = ProductDetails(productImage: UIImage(named: "st-8")!, productDescription: "Top Electronic", productPrice: "150")
-        let topElectronic4 = ProductDetails(productImage: UIImage(named: "st-8")!, productDescription: "Top Electronic", productPrice: "140")
-        let topElectronic5 = ProductDetails(productImage: UIImage(named: "st-8")!, productDescription: "Top Electronic", productPrice: "150")
-        self.arrOfProduct.append(ProductModel(titleSection: "Top Electronic", productDetails: [topElectronic,topElectronic1,topElectronic2,topElectronic3,topElectronic4,topElectronic5]))
-        
-        let fashoinPicks = ProductDetails(productImage: UIImage(named: "st-3")!, productDescription: "Fashoin Picks", productPrice: "120")
-        let fashoinPicks1 = ProductDetails(productImage: UIImage(named: "st-3")!, productDescription: "Fashoin Picks", productPrice: "130")
-        let fashoinPicks2 = ProductDetails(productImage: UIImage(named: "st-3")!, productDescription: "Fashoin Picks", productPrice: "140")
-        let fashoinPicks3 = ProductDetails(productImage: UIImage(named: "st-3")!, productDescription: "Fashoin Picks", productPrice: "150")
-        let fashoinPicks4 = ProductDetails(productImage: UIImage(named: "st-3")!, productDescription: "Fashoin Picks", productPrice: "140")
-        let fashoinPicks5 = ProductDetails(productImage: UIImage(named: "st-3")!, productDescription: "Fashoin Picks", productPrice: "150")
-        self.arrOfProduct.append(ProductModel(titleSection: "Fashoin Picks", productDetails: [fashoinPicks,fashoinPicks1,fashoinPicks2,fashoinPicks3,fashoinPicks4,fashoinPicks5]))
-        
-        let beautyPicks = ProductDetails(productImage: UIImage(named: "st-7")!, productDescription: "Beauty Picks", productPrice: "120")
-        let beautyPicks1 = ProductDetails(productImage: UIImage(named: "st-7")!, productDescription: "Beauty Picks", productPrice: "130")
-        let beautyPicks2 = ProductDetails(productImage: UIImage(named: "st-7")!, productDescription: "Beauty Picks", productPrice: "140")
-        let beautyPicks3 = ProductDetails(productImage: UIImage(named: "st-7")!, productDescription: "Beauty Picks", productPrice: "150")
-        let beautyPicks4 = ProductDetails(productImage: UIImage(named: "st-7")!, productDescription: "Beauty Picks", productPrice: "160")
-        let beautyPicks5 = ProductDetails(productImage: UIImage(named: "st-7")!, productDescription: "Beauty Picks", productPrice: "170")
-        self.arrOfProduct.append(ProductModel(titleSection: "Beauty Picks", productDetails: [beautyPicks,beautyPicks1,beautyPicks2,beautyPicks3,beautyPicks4,beautyPicks5]))
+        let noonPicks1 = ProductDetails(productImage: UIImage(named: "st-2")!, productDescription: "Samsoung Galaxy Note 10 Plus", productPrice: "13,999.00")
+        let noonPicks2 = ProductDetails(productImage: UIImage(named: "st-2")!, productDescription: "Samsoung Galaxy Note 10 Plus", productPrice: "13,999.00")
+        let noonPicks3 = ProductDetails(productImage: UIImage(named: "st-2")!, productDescription: "Samsoung Galaxy Note 10 Plus", productPrice: "13,999.00")
+        let noonPicks4 = ProductDetails(productImage: UIImage(named: "st-2")!, productDescription: "Samsoung Galaxy Note 10 Plus", productPrice: "13,999.00")
+        let noonPicks5 = ProductDetails(productImage: UIImage(named: "st-2")!, productDescription: "Samsoung Galaxy Note 10 Plus", productPrice: "13,999.00")
+        let noonPicks6 = ProductDetails(productImage: UIImage(named: "st-2")!, productDescription: "Samsoung Galaxy Note 10 Plus", productPrice: "13,999.00")
+        let noonPicks7 = ProductDetails(productImage: UIImage(named: "st-2")!, productDescription: "Samsoung Galaxy Note 10 Plus", productPrice: "13,999.00")
+        let noonPicks8 = ProductDetails(productImage: UIImage(named: "st-2")!, productDescription: "Samsoung Galaxy Note 10 Plus", productPrice: "13,999.00")
+        self.arrOfProduct.append(ProductModel(titleSection: "Home Picks", productDetails: [noonPicks1,noonPicks2,noonPicks3,noonPicks4,noonPicks5,noonPicks6,noonPicks7,noonPicks8]))
+        self.arrOfProduct.append(ProductModel(titleSection: "Top Rate", productDetails: [noonPicks1,noonPicks2,noonPicks3,noonPicks4,noonPicks5,noonPicks6,noonPicks7,noonPicks8]))
+        self.arrOfProduct.append(ProductModel(titleSection: "Top Sale", productDetails: [noonPicks1,noonPicks2,noonPicks3,noonPicks4,noonPicks5,noonPicks6,noonPicks7,noonPicks8]))
+        self.arrOfProduct.append(ProductModel(titleSection: "Most Popular", productDetails: [noonPicks1,noonPicks2,noonPicks3,noonPicks4,noonPicks5,noonPicks6,noonPicks7,noonPicks8]))
+        self.arrOfProduct.append(ProductModel(titleSection: "Offers", productDetails: [noonPicks1,noonPicks2,noonPicks3,noonPicks4,noonPicks5,noonPicks6,noonPicks7,noonPicks8]))
+        self.arrOfProduct.append(ProductModel(titleSection: "New Picks", productDetails: [noonPicks1,noonPicks2,noonPicks3,noonPicks4,noonPicks5,noonPicks6,noonPicks7,noonPicks8]))
+        self.arrOfProduct.append(ProductModel(titleSection: "Recommended For You", productDetails: [noonPicks1,noonPicks2,noonPicks3,noonPicks4,noonPicks5,noonPicks6,noonPicks7,noonPicks8]))
     }
 }

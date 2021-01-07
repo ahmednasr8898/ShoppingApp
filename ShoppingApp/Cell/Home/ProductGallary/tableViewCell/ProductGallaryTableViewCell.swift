@@ -19,7 +19,6 @@ class ProductGallaryTableViewCell: UITableViewCell {
         setUpCollectionView()
         setUpTimer()
         setUpPageControl()
-        
     }
     func setUpCollectionView(){
         productCollectionView.register(UINib(nibName: "ProductGallaryCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "ProductGallaryCollectionViewCell")
