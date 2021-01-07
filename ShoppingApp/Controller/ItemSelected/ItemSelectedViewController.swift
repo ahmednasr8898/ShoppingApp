@@ -9,17 +9,28 @@ import UIKit
 class ItemSelectedViewController: UIViewController {
 
     @IBOutlet weak var productCollectionView: UICollectionView!
-    let itemImages = [UIImage(named: "st-2")!,UIImage(named: "st-2")!,UIImage(named: "st-2")!,UIImage(named: "st-2")!]
+    @IBOutlet weak var ImageGIF: UIImageView!
     @IBOutlet weak var pageControl: UIPageControl!
+    @IBOutlet weak var productModelLabel: UILabel!
+    @IBOutlet weak var productDescriptionLabel: UILabel!
+    @IBOutlet weak var productPriceLabel: UILabel!
+    let itemImages = [UIImage(named: "st-2")!,UIImage(named: "st-2")!,UIImage(named: "st-2")!,UIImage(named: "st-2")!]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpCollectionView()
         pageControl.numberOfPages = itemImages.count
+        setData()
     }
     func setUpCollectionView(){
         productCollectionView.delegate = self
         productCollectionView.dataSource = self
+    }
+    func setData(){
+        ImageGIF.loadGif(name: "GIF")
+        productModelLabel.text = "Samsoung"
+        productPriceLabel.text = "EGP 14,999.00"
+        productDescriptionLabel.text = "Galaxy Note 10 Plus Aura Black 12GB RAM 256GB 4G LTE"
     }
 }
 extension ItemSelectedViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
@@ -42,3 +53,4 @@ extension ItemSelectedViewController: UICollectionViewDelegate, UICollectionView
         self.pageControl?.currentPage = Int(roundedIndex)
     }
 }
+

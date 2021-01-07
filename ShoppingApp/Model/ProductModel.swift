@@ -6,6 +6,7 @@
 //
 import Foundation
 import UIKit
+
 struct ProductModel {
     var titleSection: String
     var productDetails: [ProductDetails]

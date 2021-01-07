@@ -4,7 +4,6 @@
 //
 //  Created by Ahmed Nasr on 1/5/21.
 //
-
 import UIKit
 
 class MainProductTableViewCell: UITableViewCell {

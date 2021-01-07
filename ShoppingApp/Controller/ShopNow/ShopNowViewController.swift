@@ -28,7 +28,6 @@ class ShopNowViewController: UIViewController {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(backImageOnClick(sender:)))
         backImageView.isUserInteractionEnabled = true
         backImageView.addGestureRecognizer(tapGesture)
-        
     }
     @objc func backImageOnClick(sender: UITapGestureRecognizer){
         dismiss(animated: true, completion: nil)
