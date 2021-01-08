@@ -10,43 +10,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Categories-->
-        <scene sceneID="0pB-Jm-Yfh">
-            <objects>
-                <viewController id="Tbi-Jj-gxt" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="EcL-kd-6Qy">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="Mwb-G8-W10"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Categories" image="chart.bar.doc.horizontal" catalog="system" id="NQp-QV-JTJ">
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
-                    </tabBarItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Luh-eS-M33" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1891" y="78"/>
-        </scene>
-        <!--Deals-->
-        <scene sceneID="jeZ-vi-JD0">
-            <objects>
-                <viewController id="tZq-3H-hnU" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="VXN-xc-Cgz">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="mty-9k-pry"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Deals" image="rectangle.and.pencil.and.ellipsis" catalog="system" id="A7b-fK-YK0">
-                        <color key="badgeColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
-                    </tabBarItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="k7f-Gd-d0s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1222" y="78"/>
-        </scene>
         <!--My Account-->
         <scene sceneID="wC5-D1-nc4">
             <objects>
@@ -418,7 +381,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7IH-Ul-CTB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-523" y="145"/>
+            <point key="canvasLocation" x="-1459" y="162"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="9Bq-Ai-edC">
@@ -555,7 +518,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KHl-Ah-bgE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2555" y="760"/>
+            <point key="canvasLocation" x="-2555" y="864"/>
         </scene>
         <!--Item Selected View Controller-->
         <scene sceneID="PPN-XW-c2T">
@@ -735,7 +698,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O0L-0t-sNy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1893" y="773"/>
+            <point key="canvasLocation" x="-1799" y="864"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="zf7-30-aFt">
@@ -750,8 +713,6 @@
                     </tabBar>
                     <connections>
                         <segue destination="zj5-Kn-qxd" kind="relationship" relationship="viewControllers" id="K5v-ib-yGO"/>
-                        <segue destination="Tbi-Jj-gxt" kind="relationship" relationship="viewControllers" id="lRk-wJ-rua"/>
-                        <segue destination="tZq-3H-hnU" kind="relationship" relationship="viewControllers" id="fOr-ba-K2d"/>
                         <segue destination="BkI-Sf-UiO" kind="relationship" relationship="viewControllers" id="BzK-bc-dyF"/>
                         <segue destination="CK2-oY-0MI" kind="relationship" relationship="viewControllers" id="gA9-Ew-n2l"/>
                     </connections>
@@ -776,7 +737,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8P2-Qc-UAG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="171" y="78"/>
+            <point key="canvasLocation" x="-245" y="78"/>
         </scene>
     </scenes>
     <resources>
@@ -785,7 +746,6 @@
         <image name="arrowshape.zigzag.right" catalog="system" width="128" height="93"/>
         <image name="callback" width="96" height="96"/>
         <image name="cart" catalog="system" width="128" height="102"/>
-        <image name="chart.bar.doc.horizontal" catalog="system" width="115" height="128"/>
         <image name="country" width="512" height="512"/>
         <image name="facebook" width="96" height="96"/>
         <image name="fulfilment_express-en" width="422" height="100"/>
@@ -796,9 +756,8 @@
         <image name="linkedin" width="96" height="96"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="noon" width="260" height="120"/>
-        <image name="person" catalog="system" width="128" height="117"/>
         <image name="person" width="256" height="256"/>
-        <image name="rectangle.and.pencil.and.ellipsis" catalog="system" width="128" height="81"/>
+        <image name="person" catalog="system" width="128" height="117"/>
         <image name="st-2" width="202" height="249"/>
         <image name="twitter" width="96" height="96"/>
         <namedColor name="AccentColor">
