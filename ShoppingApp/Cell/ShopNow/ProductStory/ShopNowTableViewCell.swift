@@ -9,8 +9,8 @@ import UIKit
 class ShopNowTableViewCell: UITableViewCell {
 
     @IBOutlet weak var productCollectionView: UICollectionView!
-    let productStoryImages = [UIImage(named: "st-1"), UIImage(named: "st-2"),UIImage(named: "st-3"),UIImage(named: "st-4"), UIImage(named: "st-5"), UIImage(named: "st-6"), UIImage(named: "st-7"),UIImage(named: "st-8")]
-    let productStoryName = ["Baby","Mobile","Fashion","Kitchen","Grocery","TVs","Beauty","Electronics"]
+    let productStoryImages = [UIImage(named: "st-2"), UIImage(named: "st-2"),UIImage(named: "st-2"),UIImage(named: "st-2"), UIImage(named: "st-2"), UIImage(named: "st-2"), UIImage(named: "st-2"),UIImage(named: "st-2")]
+    let productStoryName = ["Mobile","Mobile","Mobile","Mobile","Mobile","Mobile","Mobile","Mobile"]
     
     override func awakeFromNib() {
         super.awakeFromNib()

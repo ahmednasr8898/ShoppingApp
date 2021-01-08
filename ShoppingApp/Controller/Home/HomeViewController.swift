@@ -44,6 +44,8 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
         let cell = tableView.dequeueReusableCell(withIdentifier: "MainProductTableViewCell", for: indexPath) as! MainProductTableViewCell
         cell.showNowButton.addTarget(self, action: #selector(shopNowOnClick(sender:)), for: .touchUpInside)
         cell.setUpCell(title: arrOfProduct[indexPath.row-2].titleSection, arrOfProduct: arrOfProduct[indexPath.row-2].productDetails)
+        cell.selectedItemCellDelagte = self
+        cell.itemIndex = indexPath
         return cell
     }
     @objc func shopNowOnClick(sender: UIButton){
@@ -82,5 +84,13 @@ extension HomeViewController{
         self.arrOfProduct.append(ProductModel(titleSection: "Offers", productDetails: [noonPicks1,noonPicks2,noonPicks3,noonPicks4,noonPicks5,noonPicks6,noonPicks7,noonPicks8]))
         self.arrOfProduct.append(ProductModel(titleSection: "New Picks", productDetails: [noonPicks1,noonPicks2,noonPicks3,noonPicks4,noonPicks5,noonPicks6,noonPicks7,noonPicks8]))
         self.arrOfProduct.append(ProductModel(titleSection: "Recommended For You", productDetails: [noonPicks1,noonPicks2,noonPicks3,noonPicks4,noonPicks5,noonPicks6,noonPicks7,noonPicks8]))
+    }
+}
+extension HomeViewController: selectedItemProtocol{
+    func onClickProductView(itemIndex: Int) {
+        print("item index \(itemIndex) selected")
+        let st = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ItemSelectedViewController")
+        st.modalPresentationStyle = .fullScreen
+        self.present(st, animated: true, completion: nil)
     }
 }

@@ -27,20 +27,23 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                     </collectionView>
-                    <stackView opaque="NO" contentMode="scaleToFill" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="EBh-qd-0e5">
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="EBh-qd-0e5">
                         <rect key="frame" x="8" y="10" width="363" height="30"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top Home Picks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QDY-Pz-ggj">
-                                <rect key="frame" x="0.0" y="0.0" width="146.5" height="30"/>
+                                <rect key="frame" x="0.0" y="0.0" width="178" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yob-20-ckh">
-                                <rect key="frame" x="206.5" y="0.0" width="156.5" height="30"/>
+                                <rect key="frame" x="218" y="0.0" width="145" height="30"/>
                                 <state key="normal" title="SHOP NOW"/>
                             </button>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="Yob-20-ckh" firstAttribute="width" secondItem="EBh-qd-0e5" secondAttribute="width" multiplier="0.4" id="Wv5-Dn-HKy"/>
+                        </constraints>
                     </stackView>
                 </subviews>
                 <constraints>

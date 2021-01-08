@@ -14,6 +14,7 @@ class ItemSelectedViewController: UIViewController {
     @IBOutlet weak var productModelLabel: UILabel!
     @IBOutlet weak var productDescriptionLabel: UILabel!
     @IBOutlet weak var productPriceLabel: UILabel!
+    @IBOutlet weak var backImageView: UIImageView!
     let itemImages = [UIImage(named: "st-2")!,UIImage(named: "st-2")!,UIImage(named: "st-2")!,UIImage(named: "st-2")!]
     
     override func viewDidLoad() {
@@ -21,6 +22,7 @@ class ItemSelectedViewController: UIViewController {
         setUpCollectionView()
         pageControl.numberOfPages = itemImages.count
         setData()
+        backImageOnClick()
     }
     func setUpCollectionView(){
         productCollectionView.delegate = self
@@ -31,6 +33,14 @@ class ItemSelectedViewController: UIViewController {
         productModelLabel.text = "Samsoung"
         productPriceLabel.text = "EGP 14,999.00"
         productDescriptionLabel.text = "Galaxy Note 10 Plus Aura Black 12GB RAM 256GB 4G LTE"
+    }
+    func backImageOnClick(){
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(backOnCick))
+        backImageView.isUserInteractionEnabled = true
+        backImageView.addGestureRecognizer(tapGesture)
+    }
+    @objc func backOnCick(){
+        dismiss(animated: true, completion: nil)
     }
 }
 extension ItemSelectedViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{

@@ -6,12 +6,18 @@
 //
 import UIKit
 
+protocol selectedItemProtocol {
+    func onClickProductView(itemIndex: Int)
+}
+
 class MainProductTableViewCell: UITableViewCell {
 
     @IBOutlet weak var productCollectionView: UICollectionView!
     @IBOutlet weak var SectionLabel: UILabel!
     @IBOutlet weak var showNowButton: UIButton!
     var arrOfProduct = [ProductDetails]()
+    var selectedItemCellDelagte: selectedItemProtocol?
+    var itemIndex: IndexPath?
    
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,7 +29,6 @@ class MainProductTableViewCell: UITableViewCell {
         productCollectionView.register(UINib(nibName: "MainProductCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "MainProductCollectionViewCell")
         productCollectionView.delegate = self
         productCollectionView.dataSource = self
-        //productCollectionView.layoutIfNeeded()
     }
     func setUpShopNowButton(){
         showNowButton.layer.borderWidth = 0.9
@@ -54,4 +59,8 @@ extension MainProductTableViewCell: UICollectionViewDataSource, UICollectionView
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 0, left: 8, bottom: 0, right: 8)
     }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        selectedItemCellDelagte?.onClickProductView(itemIndex: indexPath.row)
+    }
 }
+
